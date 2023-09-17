@@ -1,5 +1,6 @@
 package com.example.models;
 
+import io.micronaut.serde.annotation.SerdeImport;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import io.micronaut.core.annotation.Introspected;
@@ -14,6 +15,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @MappedEntity
 @Introspected
+@SerdeImport(UserTable.class)
 public class UserTable {
 
     @Id
